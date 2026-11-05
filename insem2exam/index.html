@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Student Portal</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <h2>STUDENT PORTAL </h2>
+        <p class="menu-title">MAIN MENU</p>
+
+        <button onclick="openSection('overview', this)" class="menu active">🏠 Overview</button>
+        <button onclick="openSection('subjects', this)" class="menu">📚 Subjects</button>
+        <button onclick="openSection('resources', this)" class="menu">📂 Resources</button>
+        <button onclick="openSection('grades', this)" class="menu">📊 Grades</button>
+        <button onclick="openSection('presence', this)" class="menu">📅 Attendance</button>
+        <button onclick="openSection('account', this)" class="menu">👤 My Account</button>
+
+        <div class="sidebar-footer">
+            <p>Student Portal</p>
+            <small>Academic Year 2026-27</small>
+        </div>
+    </aside>
+
+    <main class="workspace">
+
+        <header>
+            <div>
+                <h1 id="heading">Overview</h1>
+                <p>Welcome to your academic workspace!</p>
+            </div>
+            <div class="user-info">
+                <div class="avatar">V</div>
+                <span>Vishwas</span>
+            </div>
+        </header>
+
+        <!-- Overview -->
+        <section id="overview" class="section visible">
+
+            <div class="banner">
+                <h2>Hello, Vishwas! 👋</h2>
+                <p>Stay focused, keep learning and achieve your goals.</p>
+            </div>
+
+            <div class="summary">
+                <div class="summary-card">
+                    <span>📖</span>
+                    <p>Enrolled Subjects</p>
+                    <h2>07</h2>
+                </div>
+
+                <div class="summary-card">
+                    <span>📅</span>
+                    <p>Attendance</p>
+                    <h2>82%</h2>
+                </div>
+
+                <div class="summary-card">
+                    <span>⭐</span>
+                    <p>Current CGPA</p>
+                    <h2>7.5</h2>
+                </div>
+
+                <div class="summary-card">
+                    <span>📝</span>
+                    <p>Assignments</p>
+                    <h2>04</h2>
+                </div>
+            </div>
+
+            <div class="panel">
+                <h3>Latest Announcements</h3>
+                <div class="notice">
+                    <strong>Internal Examinations</strong>
+                    <p>Check the examination timetable on the university website.</p>
+                </div>
+                <div class="notice">
+                    <strong>Assignment Submission</strong>
+                    <p>Complete your pending assignments before the deadline.</p>
+                </div>
+                <div class="notice">
+                    <strong>Upcoming Events</strong>
+                    <p>Prepare for the upcoming technical fest.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Subjects -->
+        <section id="subjects" class="section">
+            <h2>My Subjects</h2>
+
+            <div class="subject-grid">
+                <div class="subject">
+                    <h3>Mathematics</h3>
+                    <p>Subject Code: 25MT2106</p>
+                    <span>Semester 1</span>
+                </div>
+
+                <div class="subject">
+                    <h3>WEB DEVELOPMENT </h3>
+                    <p>Subject Code: 25CS2008</p>
+                    <span>Semester 1</span>
+                </div>
+
+                <div class="subject">
+                    <h3>Digital Electronics</h3>
+                    <p>Subject Code: 25EC2103</p>
+                    <span>Semester 1</span>
+                </div>
+
+                <div class="subject">
+                    <h3>IOT</h3>
+                    <p>Subject Code: 25EC2104</p>
+                    <span>Semester 1</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources -->
+        <section id="resources" class="section">
+            <h2>Learning Resources</h2>
+
+            <div class="panel">
+                <div class="resource">
+                    <div>
+                        <strong>Mathematics Notes</strong>
+                        <p>Chapter-wise study materials</p>
+                    </div>
+                    <a href="#" download>Download</a>
+                </div>
+
+                <div class="resource">
+                    <div>
+                        <strong>Programming Notes</strong>
+                        <p>Programming concepts and examples</p>
+                    </div>
+                    <a href="#" download>Download</a>
+                </div>
+
+                <div class="resource">
+                    <div>
+                        <strong>Electronics Notes</strong>
+                        <p>Digital electronics materials</p>
+                    </div>
+                    <a href="#" download>Download</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grades -->
+        <section id="grades" class="section">
+            <h2>Academic Performance</h2>
+
+            <div class="panel">
+                <table>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Marks</th>
+                        <th>Grade</th>
+                    </tr>
+                    <tr>
+                        <td>Mathematics</td>
+                        <td>88</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>IOT</td>
+                        <td>92</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>Digital Electronics</td>
+                        <td>85</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>WEB DEVELOPMENT</td>
+                        <td>90</td>
+                        <td>A+</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- Attendance -->
+        <section id="presence" class="section">
+            <h2>Attendance Report</h2>
+
+            <div class="panel">
+                <h3>Overall Attendance</h3>
+                <h1>75%</h1>
+                <div class="track">
+                    <div class="fill"></div>
+                </div>
+                <p>You have maintained good attendance.</p>
+            </div>
+        </section>
+
+        <!-- Account -->
+        <section id="account" class="section">
+            <h2>Student Information</h2>
+
+            <div class="panel account-card">
+                <div class="large-avatar">V</div>
+                <h2>Vishwas</h2>
+                <p>Student ID: 2500040238</p>
+                <hr>
+                <p>University: KL University</p>
+                <p>Department: ECE</p>
+                <p>Academic Year: 2026-27</p>
+                <p>Semester: Second Year</p>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
